@@ -1,0 +1,182 @@
+body {
+    font-family: 'SevenSegFont', sans-serif; 
+    text-align: center;
+    background-color: #222;
+    color: #ff6347;
+  }
+  
+  p {
+    font-size: 48px;
+    margin: 20px;
+  }
+  
+  #countdown {
+    font-size: 100px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    font-size: 18px;
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  input {
+    font-size: 15px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    z-index: 999;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  #popup p {
+    font-size: 32px;
+    color: #ff6347;
+    margin-bottom: 10px;
+  }
+
+  #popup button {
+    font-size: 18px;
+    padding: 8px 16px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Light Theme */
+.light-mode {
+  background-color: #fff;
+  color: #333;
+}
+/* Hide the default checkbox */
+#themeToggle {
+  display: none;
+}
+
+/* Style the slider switch */
+.theme-switch {
+  /* ... (existing styles) */
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Style the moon and sun icons */
+.moon-icon,
+.sun-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ffffff;
+  transition: opacity 0.3s;
+}
+
+.sun-icon {
+  right: 8px;
+  opacity: 0;
+  color: #fbff03;
+}
+
+/* Adjust appearance for checked (dark) state */
+#themeToggle:checked + .theme-switch {
+  background-color: #ff6347;
+}
+
+#themeToggle:checked + .theme-switch::before {
+  transform: translateX(20px);
+}
+
+#themeToggle:checked + .theme-switch .moon-icon {
+  opacity: 0;
+}
+
+#themeToggle:checked + .theme-switch .sun-icon {
+  opacity: 1;
+}
+/* Dark Mode Input Styles */
+.dark-mode input[type="text"] {
+    background-color:#fff; 
+    color: #333;
+    border: 1px solid #555;
+  }
+  
+  /* Light Mode Input Styles */
+  .light-mode input[type="text"] {
+    background-color:#333;
+    color:  #fff;
+    border: 1px solid #ccc;
+  }
+  
+  /* Adjust height and width of input boxes */
+  input[type="text"] {
+    width: 20px; /* Adjust width as needed */
+    height: 10px; /* Adjust height as needed */
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 0 5px;
+  }
+
+  #current-time {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #current-time span {
+    display: inline-block;
+    width: 40px;
+    text-align: center;
+  }
+  
+  /* Dark Mode Current Time Styles */
+.dark-mode #current-time {
+    color: #fff;
+  }
+  
+  /* Light Mode Current Time Styles */
+  .light-mode #current-time {
+    color: #333;
+  }
+  
+  #current-date {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  #current-date span {
+    display: inline-block;
+  }
+  
+  
+  
+  
